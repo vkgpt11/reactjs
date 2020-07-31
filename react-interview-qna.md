@@ -13,9 +13,8 @@
       https://stackoverflow.com/questions/38334062/why-do-you-need-to-bind-a-function-in-a-constructor
       To Avoid function will attach on every render
       
-## 5. Why you shoud not use the Arrow function to attach function to event?
-##    or 
-##    Why you shouldn't use inline arrow functions in JSX props
+## 5. Why you shoud not use the Arrow function to attach function to event? OR Why you shouldn't use inline arrow functions in JSX props
+      https://stackoverflow.com/questions/36677733/why-shouldnt-jsx-props-use-arrow-functions-or-bind
 
       Arrow function should not be used in the component render method. Render is called repeatedly, thus arrow function create a new function often and unnecessary. 
 
