@@ -19,16 +19,17 @@
       Arrow function should not be used in the component render method. Render is called repeatedly, thus arrow function create a new function often and unnecessary. 
 
 ## 6. What are syntetic events and event pooling?
-            Event Pooling - React uses SyntheticEvent which is a wrapper for native browser events so that they have consistent properties across different browsers. 
-            The event handlers that we have in any react-app are actually passed instances of SyntheticEvent unless 
-            we use nativeEvent attribute to get the underlying browser event.
+      https://stackoverflow.com/questions/36114196/what-is-event-pooling-in-react
+      Event Pooling - React uses SyntheticEvent which is a wrapper for native browser events so that they have consistent properties across different browsers. 
+      The event handlers that we have in any react-app are actually passed instances of SyntheticEvent unless 
+      we use nativeEvent attribute to get the underlying browser event.
 
-            Wrapping native event instances can cause performance issues since every synthetic event wrapper
-            that's created will also need to be garbage collected at some point, which can be expensive in terms of CPU time.
+      Wrapping native event instances can cause performance issues since every synthetic event wrapper
+      that's created will also need to be garbage collected at some point, which can be expensive in terms of CPU time.
 
-            React deals with this problem by allocating a synthetic instance pool. 
-            Whenever an event is triggered, it takes an instance from the pool and populates its properties and reuses it. 
-            When the event handler has finished running, all properties will be nullified and the synthetic event instance is released back into the pool. 
-            Hence, increasing the performance.
+      React deals with this problem by allocating a synthetic instance pool. 
+      Whenever an event is triggered, it takes an instance from the pool and populates its properties and reuses it. 
+      When the event handler has finished running, all properties will be nullified and the synthetic event instance is released back into the pool. 
+      Hence, increasing the performance.
 
       
