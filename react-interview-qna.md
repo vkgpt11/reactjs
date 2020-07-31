@@ -9,13 +9,16 @@
 ## 3. When can you skip using bind when binding to event?
       you can skip if you are not using component state.
       
-## 3. Why you should not use bind functions inside the render function?
+## 4. Why you should not use bind functions inside the render function?
       https://stackoverflow.com/questions/38334062/why-do-you-need-to-bind-a-function-in-a-constructor
       To Avoid function will attach on every render
       
-## .  Why you shoud not use the Arrow function to attach function to event?
+## 5. Why you shoud not use the Arrow function to attach function to event?
+##    or 
+##    Why you shouldn't use inline arrow functions in JSX props
+
       Arrow function should not be used in the component render method. Render is called repeatedly, thus arrow function create a new function often and unnecessary. 
 
-## 3. What are syntetic events?
+## 6. What are syntetic events?
 
       
