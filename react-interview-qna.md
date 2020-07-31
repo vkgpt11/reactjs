@@ -31,5 +31,8 @@
       Whenever an event is triggered, it takes an instance from the pool and populates its properties and reuses it. 
       When the event handler has finished running, all properties will be nullified and the synthetic event instance is released back into the pool. 
       Hence, increasing the performance.
+      
+## Tips on React for large scale projects
+
 
       
