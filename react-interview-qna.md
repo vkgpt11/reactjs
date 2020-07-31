@@ -1,6 +1,21 @@
-## How does react recieve an browser event?
+## 1. How does react recieve an browser event?
       In actuality, React doesn’t attach event handlers to the nodes themselves. Instead, 
       a single event listener is attached to the root of the document; 
       when an event is fired, React maps it to the appropriate component element.
-## What is the use of bind function in react?
-    https://www.youtube.com/watch?v=FhSnclaWFH8
+      
+## 2. What is the use of bind function in react?
+      https://www.youtube.com/watch?v=FhSnclaWFH8
+      
+## 3. When can you skip using bind when binding to event?
+      you can skip if you are not using component state.
+      
+## 3. Why you should not use bind functions inside the render function?
+      https://stackoverflow.com/questions/38334062/why-do-you-need-to-bind-a-function-in-a-constructor
+      To Avoid function will attach on every render
+      
+## .  Why you shoud not use the Arrow function to attach function to event?
+      Arrow function should not be used in the component render method. Render is called repeatedly, thus arrow function create a new function often and unnecessary. 
+
+## 3. What are syntetic events?
+
+      
