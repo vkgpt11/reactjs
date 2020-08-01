@@ -136,8 +136,9 @@ but use it with caution. It could lead to performance issues
 
 + Invoked as soon as the updating happens.
 + Most commonly used for Updating the DOM in response to prop or state changes
-You can call setState() in this lifecycle, but keep in mind that you will need to wrap it in a condition to check for state or prop changes from previous state. 
-Incorrect usage of setState() can lead to an infinite loop.
+
+You can call setState() in this lifecycle, but keep in mind that you will need to **wrap it in a condition to check for state or prop changes from previous state.**
+Incorrect usage of setState() can lead to an **infinite loop**.
 
 ```
 componentDidUpdate(prevProps) {
