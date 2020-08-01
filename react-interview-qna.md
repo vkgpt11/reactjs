@@ -32,7 +32,18 @@
       When the event handler has finished running, all properties will be nullified and the synthetic event instance is released back into the pool. 
       Hence, increasing the performance.
       
-## Tips on React for large scale projects
+## 7. Tips on React for large scale projects
+
+## 8. What is the use of PureComponent & Why should one not use shouldComponentMount to prevent re-rendering?
+      This method only exists as a performance optimization. Do not rely on it to “prevent” a rendering, as this can lead to bugs. 
+      Consider using the built-in PureComponent instead of writing shouldComponentUpdate() by hand. 
+      PureComponent performs a shallow comparison of props and state, and reduces the chance that you’ll skip a necessary update.
+
+      If you are confident you want to write it by hand, you may compare this.props with nextProps and this.state with nextState and 
+      return false to tell React the update can be skipped. Note that returning false does not prevent child components from re-rendering when their state changes.
+
+      We do not recommend doing deep equality checks or using JSON.stringify() in shouldComponentUpdate(). It is very inefficient and will harm performance.
+
 
 
       
