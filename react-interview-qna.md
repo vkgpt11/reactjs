@@ -56,6 +56,6 @@ They fall in three category Mount, Update and Unmount.
    ![](https://i2.wp.com/programmingwithmosh.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-31-at-1.44.28-PM.png?ssl=1)
    
 ## 10. What are the most commonly used react component lifecycle methods?
-![](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+![](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ogimage.png)
 
       
