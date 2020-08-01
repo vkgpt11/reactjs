@@ -117,3 +117,12 @@ class Hello extends Component{
 }
 ```
 + The `render()` method returns **JSX** that is displayed in the UI. A `render()` can also return a null if there is nothing to render for that component.
+####
+> **A render() method has to be pure with no side-effects.
+
+React requires that your render() is pure. 
+Pure functions are those that do not have any side-effects and will always return the same output when the same inputs are passed.
+** This means that you can not setState() within a render(). **
+
+
+
