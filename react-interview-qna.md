@@ -95,17 +95,7 @@ constructor(props) {
 ```
 Only use this pattern if you intentionally want to ignore prop updates.
 
-## 11. What is the use of `componentDidMount()`?
-`componentDidMount()` is called as soon as the component is mounted and ready. 
-This is a good place to initiate API calls, if you need to load data from a remote endpoint.
-
-Unlike the render() method, componentDidMount() allows the use of setState(). 
-Calling the setState() here will update state and cause another rendering but it will happen before the browser updates the UI. 
-This is to ensure that the user will not see any UI updates with the double rendering.
-
-> You can modify the component state within the componentDidMount(), but use it with caution. It could lead to performance issues
-
-## 12. What is the use of `render()` method?
+## 11. What is the use of `render()` method?
 + Most used method in the react lifecycle methods 
 + `render()` is the only required method within a class component
 + handles the rendering of your component to the UI, during the **mounting** and **updating** of your component.
@@ -125,6 +115,16 @@ React requires that your render() is pure.
 Pure functions are those that do not have any side-effects and will always return the same output when the same inputs are passed.
 
 **This means that you can not setState() within a render().**
+
+## 12. What is the use of `componentDidMount()`?
+`componentDidMount()` is called as soon as the component is mounted and ready. 
+This is a good place to initiate API calls, if you need to load data from a remote endpoint.
+
+Unlike the render() method, componentDidMount() allows the use of setState(). 
+Calling the setState() here will update state and cause another rendering but it will happen before the browser updates the UI. 
+This is to ensure that the user will not see any UI updates with the double rendering.
+
+> You can modify the component state within the componentDidMount(), but use it with caution. It could lead to performance issues
 
 
 
