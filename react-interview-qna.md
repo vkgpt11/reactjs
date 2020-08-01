@@ -106,13 +106,15 @@ class Hello extends Component{
    }
 }
 ```
-+ The `render()` method returns **JSX** that is displayed in the UI. A `render()` can also return a null if there is nothing to render for that component.
++ The `render()` method returns **JSX** that is displayed in the UI. 
+  A `render()` can also return a null if there is nothing to render for that component.
 
 #### Note
 > **A render() method has to be pure with no side-effects.**
 
 React requires that your render() is pure. 
-Pure functions are those that do not have any side-effects and will always return the same output when the same inputs are passed.
+Pure functions are those that do not have any side-effects and 
+will always return the same output when the same inputs are passed.
 
 **This means that you can not setState() within a render().**
 
@@ -121,10 +123,12 @@ Pure functions are those that do not have any side-effects and will always retur
 This is a good place to initiate API calls, if you need to load data from a remote endpoint.
 
 Unlike the render() method, componentDidMount() allows the use of setState(). 
-Calling the setState() here will update state and cause another rendering but it will happen before the browser updates the UI. 
+Calling the setState() here will update state and cause another rendering 
+but it will happen before the browser updates the UI. 
 This is to ensure that the user will not see any UI updates with the double rendering.
 
-> You can modify the component state within the componentDidMount(), but use it with caution. It could lead to performance issues
+> You can modify the component state within the componentDidMount(), 
+but use it with caution. It could lead to performance issues
 
 
 
