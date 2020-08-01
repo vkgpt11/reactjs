@@ -136,6 +136,7 @@ but use it with caution. It could lead to performance issues
 
 + Invoked as soon as the updating happens.
 + Most commonly used for Updating the DOM in response to prop or state changes
++ `componentDidUpdate()` will not be invoked if `shouldComponentUpdate()` returns `false`.
 
 You can call setState() in this lifecycle, but keep in mind that you will need to **wrap it in a condition to check for state or prop changes from previous state.**
 Incorrect usage of setState() can lead to an **infinite loop**.
@@ -150,3 +151,16 @@ componentDidUpdate(prevProps) {
 ```
 In this case, there won’t be a need to make the API call if the props did not change.
 
+#### Note:
+If your component implements the getSnapshotBeforeUpdate() lifecycle (which is rare), the value it returns will be passed as a third “snapshot” parameter to componentDidUpdate(). Otherwise this parameter will be undefined.
+
+## 14. What is the use of `componentWillUnmount`?
++ invoked immediately before a component is unmounted and destroyed
++ **Perform any necessary cleanup**: clearing timers, cancelling api calls, or clearing any caches in storage.
++ **should not call `setState()` in `componentWillUnmount()`** because the component will never be re-rendered
+
+```
+componentWillUnmount() {
+ window.removeEventListener('resize', this.resizeListener)
+}
+```
