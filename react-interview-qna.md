@@ -53,6 +53,7 @@ They fall in three category Mount, Update and Unmount.
    + **Unmount** – Death of your component
       
    https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+   ![](https://i2.wp.com/programmingwithmosh.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-31-at-1.44.28-PM.png?ssl=1)
 
 
       
