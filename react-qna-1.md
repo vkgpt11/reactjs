@@ -8,3 +8,14 @@
 |Binding| Allows only one-way binding. State can be bind directly to view. Any change in the view will be modified using callbacks | Allows two way databinding|
 |DOM| Uses Virtual DOM, performance is faster for data intence applications | Uses Real DOM, performance is slower for data intence applications |
 |Dependency Injection	| Does not provide dependency injection | Provide dependency injection |
+
+## 2. What are the advantages of one-way databinding?
+In react unidirectional data flow is:
++ State is passed to the view and to child components
++ actions are triggered by the view 
++ action can update the state
++ the state change is passed to the view and to child components
+[](https://flaviocopes.com/react-unidirectional-data-flow/view-actions-state.png)
+#### Advantages:
++ it’s less error prone, as you have more control over your data
++ it’s easier to debug, as you know what is coming from where
