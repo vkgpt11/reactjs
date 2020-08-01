@@ -130,5 +130,22 @@ This is to ensure that the user will not see any UI updates with the double rend
 > You can modify the component state within the componentDidMount(), 
 but use it with caution. It could lead to performance issues
 
+## 13. What is the use of component did update?
 
+`componentDidUpdate(prevProps, prevState, snapshot)`
+
++ Invoked as soon as the updating happens.
++ Most commonly used for Updating the DOM in response to prop or state changes
+You can call setState() in this lifecycle, but keep in mind that you will need to wrap it in a condition to check for state or prop changes from previous state. 
+Incorrect usage of setState() can lead to an infinite loop.
+
+```
+componentDidUpdate(prevProps) {
+ //Typical usage, don't forget to compare the props
+ if (this.props.userName !== prevProps.userName) {
+   this.fetchData(this.props.userName);
+ }
+}
+```
+In this case, there won’t be a need to make the API call if the props did not change.
 
