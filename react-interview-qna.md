@@ -48,9 +48,9 @@ We do not recommend doing deep equality checks or using JSON.stringify() in shou
 You can think of React lifecycle methods as the series of events that happen from the birth of a React component to its death.
 They are majorly three types Mount, Update and Unmount.
 
-   + Mounting – Birth of your component
-   + Update – Growth of your component
-   + Unmount – Death of your component
+   + **Mounting** – Birth of your component
+   + **Update** – Growth of your component
+   + **Unmount** – Death of your component
       
    https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
