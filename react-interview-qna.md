@@ -55,6 +55,7 @@ They fall in three category Mount, Update and Unmount.
    + **Mounting** – Birth of your component
    + **Update** – Growth of your component
    + **Unmount** – Death of your component
+   
    Additional for Handling Errors
    + **Error Handle** - These methods are called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
       ```   
