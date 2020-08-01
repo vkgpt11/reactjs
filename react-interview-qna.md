@@ -164,3 +164,12 @@ componentWillUnmount() {
  window.removeEventListener('resize', this.resizeListener)
 }
 ```
+
+## 15. What is the use of `shouldComponentUpdate()`?
+`shouldComponentUpdate(nextProps, nextState)`
++ shouldComponentUpdate() is invoked before rendering when new props or state are being received. Defaults to true. This method is not called for the initial render or when forceUpdate() is used.
++ This method only exists as a performance optimization. Do not rely on it to “prevent” a rendering, as this can lead to bugs. Consider using the built-in PureComponent instead of writing shouldComponentUpdate() by hand
+
+## 16. What is the use of `getDerivedStateFromProps()` and `getSnapshotBeforeUpdate()`?
+
+https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops
