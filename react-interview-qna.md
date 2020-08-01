@@ -70,5 +70,28 @@ They fall in three category Mount, Update and Unmount.
 ![](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ogimage.png)
 
 ## 11. What is the use of `constructor` in react component?
+%% Best Practice of using `constructor`:
++ Use to initialize the state. Constructor is the only place where you should assign `this.state` directly
++ Use to bind event handler methods to instance 
++ when implemententing you must call `super(props)` first. Otherwise this.props will be undefined in the `constructor`
++ Should not call `this.setState()` in  `constructor`
+```
+constructor(props) {
+  super(props);
+  // Don't call this.setState() here!
+  this.state = { counter: 0 };
+  this.handleClick = this.handleClick.bind(this);
+}
+```
+%% Note:
+Avoid copying props into state! This is a common mistake:
+```
+constructor(props) {
+ super(props);
+ // Don't do this!
+ this.state = { color: props.color };
+}
+```
+Only use this pattern if you intentionally want to ignore prop updates.
 
       
