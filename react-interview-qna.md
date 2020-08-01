@@ -50,6 +50,7 @@
       * Mounting – Birth of your component
       * Update – Growth of your component
       * Unmount – Death of your component
+      https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 
       
