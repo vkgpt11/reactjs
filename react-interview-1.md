@@ -21,9 +21,11 @@ In react unidirectional data flow is:
 + it’s easier to debug, as you know what is coming from where
 
 ## 3. What is the Pure Component in React?
-
+https://medium.com/better-programming/when-to-use-react-purecomponent-723f85738be1
 ## 4. What is the Functional or Stateless Component in React?
 
 ## 5. How Stateless Component different with Pure Component?
 https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af88a1200b
 ## 6. What is the Higher Order Component?
+
+## 7. What is Container and presentational Components in react?
