@@ -50,11 +50,16 @@ We do not recommend doing deep equality checks or using JSON.stringify() in shou
 
 ## 9. What are the various types of lifecycle methods in react?
 You can think of React lifecycle methods as the series of events that happen from the birth of a React component to its death.
-They fall in three category Mount, Update and Unmount.
+They fall in three category Mount, Update and Unmount and handling errors.
 
    + **Mounting** – Birth of your component
    + **Update** – Growth of your component
    + **Unmount** – Death of your component
+   + **Error Handle** - These methods are called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
+      ```   
+            static getDerivedStateFromError()
+            componentDidCatch()
+      ```
       
    https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
    ![](https://i2.wp.com/programmingwithmosh.com/wp-content/uploads/2018/10/Screen-Shot-2018-10-31-at-1.44.28-PM.png?ssl=1)
