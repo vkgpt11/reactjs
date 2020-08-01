@@ -117,7 +117,8 @@ class Hello extends Component{
 }
 ```
 + The `render()` method returns **JSX** that is displayed in the UI. A `render()` can also return a null if there is nothing to render for that component.
-####
+
+#### Note
 > **A render() method has to be pure with no side-effects.**
 
 React requires that your render() is pure. 
