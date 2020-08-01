@@ -58,4 +58,6 @@ They fall in three category Mount, Update and Unmount.
 ## 10. What are the most commonly used react component lifecycle methods?
 ![](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ogimage.png)
 
+## 11. What is the use of `constructor` in react component?
+
       
