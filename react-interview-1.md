@@ -19,3 +19,11 @@ In react unidirectional data flow is:
 #### Advantages:
 + it’s less error prone, as you have more control over your data
 + it’s easier to debug, as you know what is coming from where
+
+## 3. What is the Pure Component in React?
+
+## 4. What is the Functional or Stateless Component in React?
+
+## 5. How Stateless Component different with Pure Component?
+https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af88a1200b
+## 6. What is the Higher Order Component?
