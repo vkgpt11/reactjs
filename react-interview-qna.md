@@ -70,6 +70,7 @@ They fall in three category Mount, Update and Unmount.
 ![](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ogimage.png)
 
 ## 11. What is the use of `constructor` in react component?
+The constructor for a React component is called before it is mounted.
 #### Best Practice of using `constructor`:
 + Use to initialize the state. Constructor is the only place where you should assign `this.state` directly
 + Use to bind event handler methods to instance 
