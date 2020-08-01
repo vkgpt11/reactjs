@@ -31,7 +31,11 @@ React deals with this problem by allocating a synthetic instance pool.
 Whenever an event is triggered, it takes an instance from the pool and populates its properties and reuses it. 
 When the event handler has finished running, all properties will be nullified and the synthetic event instance is released back into the pool. 
 Hence, increasing the performance.
-      
+
+> Synthetic events is a cross-browser wrapper around the browser's native event. 
+  It has the same interface as the browser's native event, including stopPropagation() and preventDefault() , 
+  except the events work identically across all browsers. It achieves high performance by automatically using event delegation.
+
 ## 7. Tips on React for large scale projects
 
 ## 8. What is the use of PureComponent & Why should one not use shouldComponentMount to prevent re-rendering?
