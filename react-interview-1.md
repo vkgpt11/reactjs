@@ -76,8 +76,18 @@ https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af8
 
 ## 7. What is Container and presentational Components in react?
 #### Container Component 
-
++ deal with the behavioral part
++ Tells the presentational component what should be rendered using props
++ Place your API calls and store the result into the component's state. 
 #### Presentational Component
++ Coupled with the view or how things look
++ Accept props from their container counterpart and render them
++ Reusable and should stay decoupled from the behavioral layer
++ Receives the data and callbacks exclusively via props
++ Functional components should be your first choice for writing presentational components
++ Doesn't interact with the Redux store or make API calls
+
+The usual structure is that there is a container component at the top that passes down the data to its child presentational components as props. This works for smaller projects; however, when the project gets bigger and you have a lot of intermediate components that just accept props and pass them on to child components, this will get nasty and hard to maintain. When this happens, it's better to create a container component unique to the leaf component, and this will ease the burden on the intermediate components.
 
 
 ## 8. is functional component and pure components are same?
