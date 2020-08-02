@@ -79,6 +79,10 @@ It’s just a function which accepts props and returns a React element
 + They help you to use best practices. It will get easier to separate container and presentational components
 
 ## 5. How Stateless Component different with Pure Component?
+**Pure Components** gives a considerable increase in performance because it reduces the number of render operation in the application which is a huge win for complex UI 
+
+**Stateless Components** are easy and fast to implement. They are good for very small UI view where re-render cost won’t matter that much. They provide cleaner code and less number of files to deal with.
+
 https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af88a1200b
 ## 6. What is the Higher Order Component?
 + Share the same functionality across multiple components
