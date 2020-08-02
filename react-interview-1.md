@@ -69,11 +69,24 @@ In the above case the child component gets rendered only once. Even though we ar
 https://medium.com/better-programming/when-to-use-react-purecomponent-723f85738be1
 
 ## 4. What is the Functional Component in React? When to use it?
+It’s just a function which accepts props and returns a React element
+
+    function Welcome(props) {
+      return <h1>Hello, {props.name}</h1>;
+    }
+    
++ Much easier to read and test because they are plain JavaScript functions without state or lifecycle-hooks
++ They help you to use best practices. It will get easier to separate container and presentational components
 
 ## 5. How Stateless Component different with Pure Component?
 https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af88a1200b
 ## 6. What is the Higher Order Component?
++ Share the same functionality across multiple components
++ Higher-order components take a component and return a component.
++ They are pure functions
++ Loader, Dialog(Modal) & Shared Layouts are examples of HOC
 
+https://css-tricks.com/what-are-higher-order-components-in-react/
 ## 7. What is Container and presentational Components in react?
 #### Container Component 
 + deal with the behavioral part
