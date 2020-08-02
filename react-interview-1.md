@@ -20,8 +20,54 @@ In react unidirectional data flow is:
 + it’s less error prone, as you have more control over your data
 + it’s easier to debug, as you know what is coming from where
 
-## 3. What is the Pure Component in React?
+## 3. What is the Pure Component in React? When will you make use of it?
+`React.PureComponent` is exactly the same as `React.Component` except that it handles the `shouldComponentUpdate()` method by default for you. When props or state changes, `React.PureComponent` will do a shallow comparison on both props and state. `React.Component` on the other hand won't compare current props and state to next out of the box.
+#### Usage
+if children components are classes and are being passed only some of the props of their parents, then PureComponent might be worth looking into.
+
+#### Child Component as PureComponent
+```
+import React from 'react';
+export default class Child extends React.PureComponent {
+  render() {
+    console.log('child rendered');
+    return (
+      <div>{ this.props.message }</div>
+    );
+  }
+}
+```
+#### Parent Component as Component
+```
+import React from 'react';
+import Child from './Child';
+export default class Parent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0,
+      message: 'hello',
+    };
+  }
+  handleClick = () => {
+    this.setState(prevState => ({ counter: prevState.counter + 1 }));
+  };
+  render() {
+    console.log('parent rendered');
+    return (
+      <main>
+        {this.state.counter}
+        <br />
+        <Child message={this.state.message} />
+        <button type='button' onClick={this.handleClick}>Increment</button>
+      </main>
+    );
+  }
+}
+```
+In the above case the child component gets rendered only once. Even though we are changing the state in `handleClick` each time the button is clicked.
 https://medium.com/better-programming/when-to-use-react-purecomponent-723f85738be1
+
 ## 4. What is the Functional or Stateless Component in React?
 
 ## 5. How Stateless Component different with Pure Component?
