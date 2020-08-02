@@ -12,5 +12,7 @@ https://medium.com/@yudhajitadhikary/client-side-rendering-vs-server-side-render
 https://github.com/sudheerj/reactjs-interview-questions
 
 ## 6. What are the arrow functions in react? List the pitfalls and advantages using them?
+https://medium.com/@oleg008/arrow-functions-in-react-f782d11460b4
+https://medium.com/tfogo/advantages-and-pitfalls-of-arrow-functions-a16f0835799e
 
 
