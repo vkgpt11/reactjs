@@ -75,3 +75,11 @@ https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af8
 ## 6. What is the Higher Order Component?
 
 ## 7. What is Container and presentational Components in react?
+
+## 8. is functional component and pure components are same?
+A component is said to be pure if it is guaranteed to return the same result given the same props and state. A functional component is a good example of a pure component because, given an input, you know what will be rendered. ... Class components can be pure too as long as their props and state are immutable.
+
+## 9. Stateful vs Stateless components?
+You can use either a function or a class for creating **stateless components**. But unless you need to use a lifecycle hook in your components, you should go for stateless functional components. However, as of React v16, there are no performance benefits from using stateless functional components over class components. 
+
+**Stateful components** are always class components. **Stateful components** have a state that gets initialized in the constructor. 
