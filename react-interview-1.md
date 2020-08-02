@@ -68,13 +68,17 @@ export default class Parent extends React.Component {
 In the above case the child component gets rendered only once. Even though we are changing the state in `handleClick` each time the button is clicked.
 https://medium.com/better-programming/when-to-use-react-purecomponent-723f85738be1
 
-## 4. What is the Functional or Stateless Component in React?
+## 4. What is the Functional Component in React? When to use it?
 
 ## 5. How Stateless Component different with Pure Component?
 https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af88a1200b
 ## 6. What is the Higher Order Component?
 
 ## 7. What is Container and presentational Components in react?
+#### Container Component 
+
+#### Presentational Component
+
 
 ## 8. is functional component and pure components are same?
 A component is said to be pure if it is guaranteed to return the same result given the same props and state. A functional component is a good example of a pure component because, given an input, you know what will be rendered. ... Class components can be pure too as long as their props and state are immutable.
