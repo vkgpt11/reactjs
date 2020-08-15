@@ -8,3 +8,5 @@
 
 
 https://www.imaginarycloud.com/blog/react-hooks-vs-redux
+
+## How does Redux works?
