@@ -29,12 +29,29 @@
 |**Error Boundary**|getDerivedStateFromError|Nothing Available|
 ||componentDidCatch|Nothing Available|
 
+## How to upgrade class project to hooks projects?
+- Update react, react-dom version 
+- Test
+- Update the code on route at a time 
+- Test
+- this.state -> useState
+- lifecycle events -> useEffect
+- Test
+
+## How do you debug react Hooks?
+- Console.log
+- Debugger statements 
+- React Developer Tools (chrome plugin)
+- useDebugValue
+
+
 ## How react Hooks are different from Redux?
 - 
 
 ## When to use Hooks over Redux?
 
-
+## Hooks
+https://www.youtube.com/watch?v=f3yRqkOFSCk&t=5s
 https://www.imaginarycloud.com/blog/react-hooks-vs-redux
 
 ## How does Redux works?
