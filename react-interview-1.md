@@ -127,3 +127,4 @@ You can use either a function or a class for creating **stateless components**. 
 // Use `inputRef.current.value` to read the current value of <input>
 ```
 https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components
+https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/#conclusion
