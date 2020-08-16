@@ -19,7 +19,8 @@
 
 |State Of lifecycle|React|Hooks|
 |-----|------|-----|
-|Initial Render|
+|Initial Render| getDerivedStateFromProps | useEffect(()=>{}, [prop1, prop2])|
+||componentDidMount|useEffect(()=>{},[])|
 |Updates|
 |Unmount|
 
