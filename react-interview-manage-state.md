@@ -17,6 +17,11 @@
 
 ## Map Lifecycle class methods to lifecycle hooks?
 
+|State Of lifecycle|React|Hooks|
+|-----|------|-----|
+|Initial Render|
+|Updates|
+|Unmount|
 
 ## How react Hooks are different from Redux?
 - 
