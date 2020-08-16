@@ -114,3 +114,16 @@ A component is said to be pure if it is guaranteed to return the same result giv
 You can use either a function or a class for creating **stateless components**. But unless you need to use a lifecycle hook in your components, you should go for stateless functional components. However, as of React v16, there are no performance benefits from using stateless functional components over class components. 
 
 **Stateful components** are always class components. **Stateful components** have a state that gets initialized in the constructor. 
+
+## 10. What is the difference between Controlled and Uncontrolled components?
+**A Controlled Component** is one that takes its current value through props and notifies changes through callbacks like onChange. A parent component "controls" it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a "dumb component".
+**A Uncontrolled Component** is one that stores its own state internally, and you query the DOM using a ref to find its current value when you need it. This is a bit more like traditional HTML.
+```
+// Controlled:
+<input type="text" value={value} onChange={handleChange} />
+
+// Uncontrolled:
+<input type="text" defaultValue="foo" ref={inputRef} />
+// Use `inputRef.current.value` to read the current value of <input>
+```
+https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components
