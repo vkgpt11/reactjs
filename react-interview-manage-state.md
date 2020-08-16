@@ -53,5 +53,6 @@
 ## Hooks
 https://www.youtube.com/watch?v=f3yRqkOFSCk&t=5s
 https://www.imaginarycloud.com/blog/react-hooks-vs-redux
+https://www.youtube.com/watch?v=eX_L39UvZes
 
 ## How does Redux works?
