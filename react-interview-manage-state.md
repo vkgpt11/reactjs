@@ -19,10 +19,15 @@
 
 |State Of lifecycle|React|Hooks|
 |-----|------|-----|
-|Initial Render| getDerivedStateFromProps | useEffect(()=>{}, [prop1, prop2])|
+|**Initial Render**| getDerivedStateFromProps | useEffect(()=>{}, [prop1, prop2])|
 ||componentDidMount|useEffect(()=>{},[])|
-|Updates|
-|Unmount|
+|**Updates**| getDerivedStateFromProps | useEffect(()=>{}, [prop1, prop2]) |
+||shouldComponentUpdate|useMemo()|
+||componentDidUpdate|useEffect(()=>{})|
+||getSnapshotBeforeUpdate|custom Hooks to hold previous state|
+|**Unmount**| unmount | useEffect(()=> {return () => {//cleanuplogic}},[])|
+|**Error Boundary**|getDerivedStateFromError|Nothing Available|
+||componentDidCatch|Nothing Available|
 
 ## How react Hooks are different from Redux?
 - 
