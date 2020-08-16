@@ -46,7 +46,9 @@
 
 
 ## How react Hooks are different from Redux?
-- 
+
+## Using React Redux with Hooks.
+https://www.youtube.com/watch?v=3zoIigieur0
 
 ## When to use Hooks over Redux?
 
