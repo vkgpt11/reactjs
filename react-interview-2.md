@@ -173,3 +173,6 @@ componentWillUnmount() {
 ## 16. What is the use of `getDerivedStateFromProps()` and `getSnapshotBeforeUpdate()`?
 
 https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops
+
+## 17. How to recieve the update state from new props? [Microsoft]
+
