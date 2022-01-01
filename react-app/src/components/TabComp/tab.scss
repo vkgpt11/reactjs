@@ -1,0 +1,14 @@
+.tab {
+  display: block
+}
+.tab-item{
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  
+}
+.active {
+  border-bottom: 1px solid orange;
+}
